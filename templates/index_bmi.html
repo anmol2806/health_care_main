@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Body Mass Index Prediction </title>
+</head> 
+<body>
+	 
+   <h2>Body Mass Index Prediction</h2>
+	<h3>Predict the Body Mass Index </h3>
+            
+   
+      <table>
+		<tr><td> Name
+			<td>  <input type=string name="name"  placeholder="Name " >
+        </tr>
+		<form action="{{ url_for('predict3')}}" method="post">
+        <tr><td> Gender 
+            <td>  <input  name="gender" type=radio   value=0> Male <input  name="gender" type=radio   value=1> Female
+		</tr>
+		<tr><td> Height
+			<td>  <input type=number name="height"  placeholder="Height (in inches) " >
+        </tr>
+		<tr><td> Weight
+			<td>  <input type=number name="weight"  placeholder="Weight (in Kgs) " >
+        </tr>
+		
+		
+        <tr>
+		<td colspan=2 align=center><br><button type="submit">Predict BMI</button>
+		</tr>
+	  </table>
+    </form>
+       
+     <br> {{pred}}<br>  
+
+  </body>
+</html>
