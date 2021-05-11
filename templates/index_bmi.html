@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid blue;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: yellow;
+  color: black;
+}
+ul {
+  list-style-position: outside;
+}
+h1.sticky {
+   position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  }
+
+.nav li {
+  display: inline-block;
+  font-size: 10px;
+
+  
+}
+</style>
+
 <title> Body Mass Index Prediction </title>
 </head> 
-<body>
+<body><div>
+<body style="background-color:Ivory;">
+<header style="background-color: WhiteSmoke">
+		
+	
+<h1  class="sticky" style="background-color: #00ff00; text-align:center; font-size:120px;" >Health Care </h1>
+
+<section><ul class="nav">
+
+<li> 
+	<h3><A HREF="#"> HOME PAGE </A></h3></li>
+<li><h3 ><A HREF="{{ url_for('home1')}}" > Heart Disease Prediction</A></h3></li>
+<li><h3 ><A HREF="{{ url_for('home2')}}" >Diabetes Prediction </A></h3></li>
+<li><h3 ><A HREF="{{ url_for('home3')}}" >BMI Prediction </A></h3></li>
+</section>
+</div>
 	 
    <h2>Body Mass Index Prediction</h2>
 	<h3>Predict the Body Mass Index </h3>
